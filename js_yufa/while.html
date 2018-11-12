@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>猜数字</title>
+</head>
+<body>
+    <script>
+	   //补充代码
+	   var intnum = prompt("请输入数字"),
+           res = true;
+	   do{
+	       if(intnum<5){
+	           alert("猜小了！");
+	       }else if(intnum>5){
+	           alert("猜大了！");
+	       }else{
+	           alert("猜对了！");
+	           res = false;
+	       }
+	       var intnum = prompt("请输入数字");
+	   }while(res)
+	</script>
+</body>
+</html>
