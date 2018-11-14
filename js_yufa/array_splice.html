@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>splice</title>
+</head>
+<body>
+<script>
+   //补充代码
+   var int ,arr = [];
+   for(var i = 0;i<=arr.length;i++){
+       int = prompt("请输入任意你想输入的字符");
+       arr[i] = int;
+       if(int==-1){
+           arr.length-=1;
+           break;
+       }
+   }
+   arr.splice(0,2,"hello")
+   console.log(arr);
+</script>
+</body>
+</html>
