@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>改变日期格式</title>
+</head>
+<body>
+<script>
+    //补充代码
+    function geshi(){
+        var times = new Date(),
+            years = times.getFullYear(),
+            months = times.getMonth(),
+            dates = times.getDate(),
+            weeks = times.getDay(),
+            hours = times.getHours(),
+            mins = times.getMinutes(),
+            sec = times.getSeconds(),
+            weekR =["日","一","二","三","四","五","六"]
+            return document.write("今天是"+years+"年"+(months+1)+"月"+dates+"日"+"星期"+weekR[weeks]+"<br/>"+hours+":"+mins+":"+sec);
+    }
+    geshi();
+</script>
+</body>
+</html>
