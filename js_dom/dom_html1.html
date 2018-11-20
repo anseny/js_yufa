@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML事件</title>
+</head>
+<body>
+    <!--补充代码-->
+    <button onmouseover = "ov(this,'red')" onmouseout = "ou(this,'black')">开始</button>
+    <button onmouseover = "ov(this,'yellow')" onmouseout = "ou(this,'black')">结束</button>
+	<script type="text/javascript">
+		//补充代码
+		function ov(but,col){
+		    but.style.color = col;
+		}
+		function ou(but,col){
+		    but.style.color = col;
+		}
+	</script>	
+</body>
+</html>
