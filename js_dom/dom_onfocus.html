@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>onblur和onfocus</title>
+    <style type="text/css">
+        .red{
+    		border:1px solid red;
+    	}
+    </style>
+</head>
+<body>
+	姓名：<input type="text"> <span></span>
+	<script type="text/javascript">
+		// 补充代码
+		function foc(){
+		    var int = document.getElementsByTagName("input")[0];
+		    var spann = document.getElementsByTagName("span")[0];
+		    int.onfocus = function(){
+		        if(int.value == ""){
+		            spann.innerHTML = "请输入您的姓名";
+		        }
+		    }
+		    int.onblur = function(){
+		        if(int.value==""){
+		            spann.innerHTML = "用户名不能为空";
+		            int.style.border = "1px solid red"; 
+		        }else if(int.value!=""){
+		            spann.innerHTML = "";
+		            int.style.border = "1px solid #ccc";
+		        }
+		    }
+		}
+		foc();
+	</script>
+</body>
+</html>
+
