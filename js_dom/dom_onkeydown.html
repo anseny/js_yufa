@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+	    <meta charset="UTF-8">
+	    <title>输入文本</title>
+	</head>
+	<body>
+		<p>字数限制在30字内，<span>您还可以输入<b>30</b> 字</span></p>
+		<textarea cols="50"  rows="7"  id="text"></textarea>
+		<script type="text/javascript">
+			//补充代码
+			var text = document.getElementById("text");
+			var bb = document.getElementsByTagName("b")[0];
+			var span1 = document.getElementsByTagName("span")[0];
+			document.onkeydown = function(e){
+			    var int = 30-(text.value.length+1);
+			    if(int>=0){
+			        bb.innerHTML = int;
+			    }else if(int<0){
+			        span1.innerHTML = "您已超出"+Math.abs(int)+"字";
+			    }
+			}
+		</script>
+	</body>
+</html>
