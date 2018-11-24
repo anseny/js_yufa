@@ -19,13 +19,17 @@
         <div id="text"> </div>
         <script type="text/javascript">
             //补充代码
+            var aa = 0;
             var divs = document.getElementById("text");
             setInterval(function(){
-                divs.innerHTML = "☆☆☆今日特卖☆☆☆"
+                if(aa === 0){
+                divs.innerHTML = "☆☆☆今日特卖☆☆☆";
+                aa=1;
+                }else{
+                    divs.innerHTML = "★★★今日特卖★★★";
+                    aa=0;
+                }
             },500);
-            setInterval(function(){
-                divs.innerHTML = "★★★今日特卖★★★"
-            },1000);
         </script>
     </body>
 </html>
