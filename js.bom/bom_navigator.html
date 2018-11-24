@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>userAgent</title>
+    </head>
+    <body>
+       <input type="button" value="点击获取浏览器信息" id="browser">
+       <script type="text/javascript">
+           //补充代码
+           function wiExplorer(){
+               var int = document.getElementById('browser');
+               int.onclick = function(){
+                   var aa ;
+                   var ex = navigator.userAgent.toLowerCase();
+                   if(ex.indexOf("x64")>-1){
+                       aa = "IE";
+                   }else if(ex.indexOf("chrome")>-1){
+                       aa = "chrome";
+                   }
+                   alert("您的浏览器为"+aa);
+               }
+           }
+           wiExplorer();
+       </script>
+    </body>
+</html>
