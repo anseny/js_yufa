@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>打开/关闭页面</title>
+    </head>
+    <body>
+       <input type="button" value="关闭本页面" id="close">
+       <input type="button" value="打开baidu" id="open">
+       <script type="text/javascript">
+           //补充代码
+           var clo = document.getElementsByTagName("input")[0];
+           var ope = document.getElementsByTagName("input")[1];
+           clo.onclick = function(){
+               window.close();
+           }
+           ope.onclick = function(){
+               window.open("","baidu","height = 500,width = 500,menubar = no ,toolbar = no,location = no,status = no,scrollbars = no");
+           } 
+           </script>
+    </body>
+</html>
