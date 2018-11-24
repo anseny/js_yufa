@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input value = "退回index2" type="button" id = "xx">
+    <input value = "退回index1" type="button" id = "yy">
+</body>
+<script>
+    var int = document.getElementById("xx");
+    var int1 = document.getElementById("yy");
+    int.onclick = function(){
+        window.history.back();
+    }
+    int1.onclick = function(){
+        window.history.go(-2);
+    }
+</script>
+</html>

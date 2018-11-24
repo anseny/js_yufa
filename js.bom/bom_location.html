@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>location方法</title>
+    </head>
+    <body>
+        <input type="button" value="操作页面" id="ck">
+        <script type="text/javascript">
+           //补充代码
+           var bott = document.getElementById("ck");
+           ck.onclick = function(){
+               aa = window.confirm("确定刷新页面吗");
+               if(aa){
+                   window.location.reload();
+               }else{
+                   window.location.replace("http://www.baidu.com");
+               }
+           }
+        </script>
+    </body>
+</html>
