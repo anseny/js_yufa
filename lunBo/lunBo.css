@@ -40,7 +40,6 @@
     position: absolute;
     left:244px;
     top:50%;
-    margin-top:-40px;
     background:url("../lunBo/image/arrow.png") no-repeat center center;
 }
 .button:hover{
@@ -66,7 +65,7 @@
     width: 12px;
     height:12px;
     border-radius:50%;
-    background:rgba(7, 17, 27, 0.4);
+    background:rgba(7, 17, 27, 0.2);
     box-shadow:0 0 0 2px rgba(255,255,255,0.8) inset;
     margin-left:8px;
 }
