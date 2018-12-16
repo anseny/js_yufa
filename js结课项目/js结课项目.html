@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="js结课项目.css">
 </head>
 <body>
-    <div class ="header">
-        <div class = "banner">
+    <div class ="header" id = "header">
+        <!-- 菜单栏 -->
+        <div class= "menuover"></div>
+        <div class="menu">
+            <div><a href=""><span>手机，配件</span><i></i></a></div>
+            <div><a href=""><span>电脑</span><i></i></a></div>
+            <div><a href=""><span>家用电器</span><i></i></a></div>
+            <div><a  class = "last" href=""><span>家具</span><i></i></a></div>
+        </div>
+        <div class = "banner" id = "banner">
             <a href="">
                 <div class="slide1 slideActive"></div>
             </a>
@@ -21,14 +29,15 @@
             </a>    
         </div>
         <!-- 前后按钮 -->
-        <a href="javascropt:void(0)"><div class = "button prev"></div></a>
-        <a href="javascropt:void(0)"><div class = "button back"></div></a>
+        <a href="javascropt:void(0)"><div class = "button prev" id = "prev"></div></a>
+        <a href="javascropt:void(0)"><div class = "button back" id = "back"></div></a>
         <!-- 圆点按钮 -->
-        <div class = "circle">
+        <div class = "circle" id = "circle">
             <span class = "active"></span>
             <span></span>
             <span></span>
         </div>
     </div>
+    <script src="js结课项目.js"></script>
 </body>
 </html>
