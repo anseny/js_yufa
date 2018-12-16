@@ -75,8 +75,39 @@ body{
     background: rgba(7,17,27,0.2);
     margin-right:10px;
     box-shadow:0 0 0 2px rgba(255,255,255,0.8) inset;
+    cursor: pointer;
 }
 .circle .active{
     box-shadow:0 0 0 2px rgba(7,17,27,0.4) inset;
     background-color:white;
+}
+/* 菜单栏 */
+.menuover{
+    width:244px;
+    height:460px;
+    background: rgba(7,17,27,0.2);
+    position: absolute;
+    z-index:1;
+}
+.menu{
+    width:244px;
+    height:460px;
+    position: absolute;
+    z-index: 2;
+}
+.menu div{
+    height:64px;
+    line-height:64px;
+    padding:0 24px;
+}
+.menu a{
+    display:block;
+    height:63px;
+    font-size: 16px;
+    color:#fff;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    text-decoration:none;
+}
+.menu .last{
+    border-style:none;
 }
